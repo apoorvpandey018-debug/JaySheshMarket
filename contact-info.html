@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User details !!</title>
+    <link rel="stylesheet" href="Jay shesh market website.css">
+</head>
+
+<body>
+<marquee behavior="scroll" direction="left" scrollamount="3">
+         Welcome to Jay Shesh Market Website !!!! 
+    </marquee>
+    <h2>These is also image of Jay shesh market !!!!</h2>
+
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerobZTsxAB2X1HzGe-orb41gai2jwqe2HXGOqliIW7HUlzGbis5igWfCpYy-fANOAoqF2cMwXUUGxm_Jm12vKev74dYJhEf7z3Va3SdlxZnD4ZWmQttE1WzQVNQYaMtshOVZe02=s1360-w1360-h1020">
+    <h3>This is image of phataha ghat from here my home is under 3km.....</h3>
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqG5GMFlRL5W4kl0_nR-hf7wy839aWeLsH6ut_NrAaItrzI995MtLc37d9j_m03L-ftnRSeAoq2RsVhKRDsZomChtOrLn4y0V8IEE5XtK1gioPIMPTBipkCo2UpKn9NfD_QrRvnWA=s1360-w1360-h1020">
+
+    <h1>User contact Information.....</h1>
+
+
+    <p>
+        Regarding the Jay Shesh Market Project, please enter the following details
+        and click submit to get our contact information:
+    </p>
+
+    <marquee behavior="scroll" direction="left" scrollamount="3">
+         Welcome to Jay Shesh Market Website !!!! 
+    </marquee>
+
+    <form action="submit-details.html" method="get">
+
+    <!-- Name -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" 
+           placeholder="Enter your full name"
+           required minlength="3"><br><br>
+           <marquee behavior="scroll" direction="right" scrollamount="3">
+         Welcome to Jay Shesh Market Website !!!! 
+    </marquee>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+<input type="email"
+       id="email"
+       name="email"
+       placeholder="example@gmail.com"
+       required>
+<small id="emailError" style="color:red; display:none;">
+Please enter a valid email like example@gmail.com
+</small>
+<br><br>
+<marquee behavior="scroll" direction="left" scrollamount="3">
+         Welcome to Jay Shesh Market Website !!!! 
+    </marquee>
+
+
+    <!-- Age -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" 
+           min="1" max="80"
+           placeholder="Enter your age"
+           required><br><br>
+           <marquee behavior="scroll" direction="right" scrollamount="3">
+         Welcome to Jay Shesh Market Website !!!! 
+    </marquee>
+
+    <!-- Phone Number -->
+    <<input type="text" id="phone" placeholder="Enter phone number">
+<button onclick="checkPhone()">Check</button>
+<p id="result"></p>
+
+<script>
+function checkPhone() {
+  let phone = document.getElementById("phone").value;
+  let regex = /^[6-9]\d{9}$/; // Indian mobile number
+
+  if (regex.test(phone)) {
+    document.getElementById("result").innerText = "✅ Valid phone number";
+  } else {
+    document.getElementById("result").innerText = "❌ Invalid phone number";
+  }
+}
+</script>
+    <input type="text" id="phone" placeholder="Enter phone number">
+<button onclick="checkPhone()">Check</button>
+<p id="result"></p>
+
+<script>
+function checkPhone() {
+  let phone = document.getElementById("phone").value;
+  let regex = /^[6-9]\d{9}$/; // Indian mobile number
+
+  if (regex.test(phone)) {
+    document.getElementById("result").innerText = "✅ Valid phone number";
+  } else {
+    document.getElementById("result").innerText = "❌ Invalid phone number";
+  }
+}
+</script>
+
+
+    <!-- Address -->
+    <label for="address">Address:</label><br>
+<input type="text"
+       id="address"
+       name="address"
+       placeholder="House no, street, city"
+       minlength="10"
+       pattern="[A-Za-z0-9 ,.-]{10,}"
+       title="Please enter a valid address this w (minimum 10 characters)"
+       required><br><br>
+       <marquee behavior="scroll" direction="right" scrollamount="3">
+         Welcome to Jay Shesh Market Website !!!! 
+    </marquee>
+
+
+    <button type="submit">
+
+     <marqee behavior="scroll" directions="left" scrollamount="3">
+          Click here instead of sumbit button ::
+     </marqee>
+
+    <marquee behavior="scroll" direction="left" scrollamount="3">
+         Click me !!....
+    </marquee>
+
+</form>
